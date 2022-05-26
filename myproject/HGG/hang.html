@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>remodelled hangman</title>
+</head>
+<body>
+	<header><strong>HANGMAN <i>REMODELLED</i></strong></header>
+	<button onclick="model()">
+		Tap to play
+	</button>
+	<script>
+
+		function model() {
+		
+		//create an array of words
+		var words =[
+				  "mary", "ene", "uzo", "glory", "vicky",
+				  "sunday", "queen", "gift", "ebuka", "joy"
+		 		 ];
+
+
+		 		 //add more words to the array of words
+		 		 words.push("monday");
+		 		 words.push("friday");
+		 		 words.push("ike");
+		 		 words.push("ugo");
+		 		 words.push("jeremiah")
+		 		 words.push("seun");
+		 		 words.push("ridwan");
+		 		 words.push("faith");
+		 		 words.push("comfort");
+		 		 words.push("confidence");
+
+
+
+		 		 //pick a random word
+ 				var word=words[Math.floor(Math.random()* words.length)];
+ 				var fLetter=word.slice(0, 1);
+
+ 				//setup an answerArray
+ 				var answerArray=[]
+ 				for (var i = 0; i < word.length; i++) {
+ 				    if (i==0) {
+ 						answerArray[i]=fLetter
+ 					}
+ 					else{
+ 						(answerArray[i] ="_");
+ 					}
+
+ 				}
+
+ 				//to track how many letters in the word that is been/to be guessed
+ 				var remainingLetters=word.length
+
+ 				//the game loop
+ 				while(remainingLetters>0){
+ 					//show the player their progress
+ 					alert(answerArray.join(" "))
+ 					//player's guess
+ 					var guess=prompt("Guess a letter, or exit game");
+ 					if (guess===null) {
+ 						break;
+
+ 					} else if(guess.length!==1){
+ 						alert("please enter a single letter.");
+ 					} else{
+ 						//Update the game state with the guess
+ 						for (var j = 0; j < word.length; j++) {
+ 							if (word[j]===guess){
+ 							answerArray[j]=guess;
+ 							remainingLetters--;
+ 						}
+ 						}
+ 					}
+ 				//The end of the game loop
+ 				}
+
+ 				//show the answer and congratulate the player
+ 				
+ 				alert(answerArray.join(" "));
+ 				alert("you are doing great");
+ 			}
+
+
+
+
+
+ 					
+  	</script>
+</body>
+</html>

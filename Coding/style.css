@@ -1,0 +1,57 @@
+.pad{
+	padding-top: 30px;padding-bottom: 5px;padding-left: 60px;padding-right: 30px
+}
+
+.ma{margin-left: 60px
+
+}
+
+.myrounded {
+    border-radius: 2.25rem!important;
+}
+
+
+
+.mag{margin-right: 40px;margin-bottom: 45px;margin-top: 40px;margin-left: 20px
+
+
+}
+.m{
+	margin-top: 150px
+}.pa{
+	padding-top: 30px;padding-bottom: 5px;padding-left: 40px;padding-right: 20px
+}
+
+.padi{
+	padding-top: 100px;padding-bottom: 150px;padding-left: 40px;padding-right: 40px
+}
+.pd{
+	padding-left: 15px;padding-top: 25px
+
+.touch{
+	display:flex;
+	align-items:center;
+	text-align: center;
+	justify-content: center;
+	width: fit-content;
+	padding: 0.6em 3em 0.6em 1.5em;
+	margin: 3em auto 0 auto;
+	background-color: white;
+
+	&_text{
+		margin: 0 0 0 0;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+
+		text-align: center;
+		&::before{
+			content:"+";
+			color:black;
+			font-weight:bold;
+			padding:0;
+			top: 0;
+			bottom: 0
+		}
+	} 
+}

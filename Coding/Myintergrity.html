@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>coding4intergrity</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="bs/css/bootstrap.min.css">
+  <script type="text/javascript" src="bs/js/bootstrap.min.js" ></script>
+ <link rel="stylesheet" type="text/css" href="style.css">
+<!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">-->
+
+
+</head>
+<body>
+	<div class="container row">
+				<div class="pad">
+					<header>
+						<h3>
+							<img src="youth.svg">
+							
+						</h3>
+				</div>	
+
+						<div class="col-md-1 pa">
+							<a href="agenda.html"><strong class="text-dark">About</strong></a>
+						</div>
+
+
+						<div class="col-md-1 pa">
+							<a href=""><strong class="text-dark">Agenda</strong></a>
+						</div>
+
+
+						<div class="col-md-1 pa">
+							<a href=""><strong class="text-dark">FAQs</strong></a>
+						</div>
+							
+						<div class="col-md-1 pa ">
+							<a href="contact.html"><strong class="text-dark">Contact</strong></a>
+						</div>
+
+						<div class="col-md-3 text-right pa">
+							<a href=""><strong class="text-dark">Login</strong></a>
+						</div>
+
+						<div class="col-md-1 pa">
+							<button class="btn btn-primary btn-lg"><strong>Apply</strong></button>
+						</div>
+
+				</header>
+
+	</div><!--endheader &row-->
+
+						<!--motherdiv-->
+				<div class="jumbotron bg-primary" style="background-image: url(Mask-Group.png); width: 100%; height: 620px;">
+					
+						<div class="container pad ma">
+							<p><h1><strong style="color: orange">CODING</strong><strong style="color: coral">4INTEGRITY</strong></h1></p>
+						</div>
+
+
+
+						<div class="container pad ma">
+						<p>	<h2 class="text-capitalize text-white">african youth anti- corruption hackathon</h2></p>
+						</div>
+
+
+
+						<div class="row">
+							<div class="container col-md-6 pad ma">
+							<p class="text-white lead" style="font-size: 22px">The United Nations Office on Drugs and Crime is looking for the most talented coders to inspire us with their ideas on how tech can help fight corruption and advance peace, justice, and strong institutions!</p>
+							</div>
+
+						</div><!--endrow-->
+
+
+
+						<div>
+							<p><button class=" btn btn-white text-primary btn-lg ma"><h5>Apply Now</h5></button></p>
+						</div>
+
+				</div><!--endmotherdiv-->
+
+						<div class="container pad ma text-center font-weight-bold">
+							<h3><strong>Deadline to Apply: 27 September 2021</strong></h3>
+							<p id="demo" class="display-4"></p>
+
+								<script>
+									// Set the date we're counting down to
+									var countDownDate = new Date("Sept 28, 2021 01:02:11").getTime();
+
+									// Update the count down every 1 second
+									var x = setInterval(function() {
+
+									  // Get today's date and time
+									  var now = new Date().getTime();
+									    
+									  // Find the distance between now and the count down date
+									  var distance = countDownDate - now;
+									    
+									  // Time calculations for days, hours, minutes and seconds
+									  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+									  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+									  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+									  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+									    
+									  // Output the result in an element with id="demo"
+									  document.getElementById("demo").innerHTML = days + "Days " + hours + "Hours "
+									  + minutes + "Minutes " + seconds + "Second ";
+									    
+									  // If the count down is over, write some text 
+									  if (distance < 0) {
+									    clearInterval(x);
+									    document.getElementById("demo").innerHTML = "EXPIRED";
+									  }
+									}, 1000);
+								</script>
+
+						</div><!--endcountdown-->
+
+
+					<div class="jumbotron m">
+						<div class="ma pad">
+							<h3 class="font-weight-bold text-grey">About CODING4INTEGRITY</h3>
+						</div>
+
+						<div class="lead text-info pad" style="font-size: 30px">
+							<strong><p>The African Youth Anti-Corruption Hackathon is a virtual 4 week technology challenge organized by the United Nations Office on Drugs and Crime (UNODC) in partnership with private and public sector organizations in five African countries, namely Egypt, Kenya, Nigeria, Senegal and South Africa. The Objectives of the Hackathon are to promote the use of information and communication technologies (ICT) to prevent and combat corruption in Africa and to give young developers the chance to counter corruption through technologies. The challenge will also promote the implementation of the United Nations Convention Against Corruption(UNCAN) by enhancing public-private partnerships in the development of sustainable ICT-based anti-corrruption solutions; youth engagement and employment; innovation and technology. The winning teams will havethe opportunity to further develop their technology solutions with the support of the public sector partners of the hackathon that seek to increase the use of ICT solutions as part of their domestic anti-corruption efforts.</p>
+
+							<p>In particular, the hackathon seeks to deliver the following outcomes in the participating countries.</p></strong>
+						</div>
+
+							<div class="row ma font-weight-bold m" style="font-size: 25px;text-align: center;">
+								 <div class="jumbotron myrounded bg-white col-md-3 ma" >
+								 	<p><img src="money.png" class="pad"></p>
+								 	Increased advocacy and youth engagement in the fight against corruption
+								 </div>
+
+								 	<div class="jumbotron myrounded bg-white col-md-3 ma">
+								 		<p><img src="rocket.png" class="pad"></p>
+								 		Increased youth employment, innovation and technology
+								 	</div>
+
+								 	<div class="jumbotron myrounded bg-white col-md-3 ma">
+								 		<p><img src="agree.png"class="pad"></p>
+								 		Increased public-private partnerships
+								 	</div>
+
+								 	<div class="jumbotron myrounded bg-white col-md-3 ma">
+								 		<p><img src="check.png" class="pad"></p>
+								 		Increased efficiency & effectiveness in public administration & service delivery
+								 	</div>
+
+								 	<div class="jumbotron myrounded bg-white col-md-3 ma">
+								 		<p><img src="list.png" class="pad"></p>
+								 		Increased transparency, accountability and accessibity to state and public services
+								 	</div>
+
+							</div><!--endrow-->
+
+					</div>
+
+							<div>
+								
+									<div class="text-center ma">
+										<h2><strong>Thematic Areas</strong></h2>
+									</div>
+
+									<div class="container">
+										<p  style="font-size: 30px">The hackathon participants will be challenged to develop an ICT-based idea or solution that address one or more of the following themes:</p>
+
+										<div class="row" style="font-size: 25px;font-color:grey">
+											
+											<div class="col-md-5 container mag">
+
+												<div class="row">
+													<div class="col-md-2">
+														<img src="mobile-payment.svg">
+													</div>
+
+													<div class="col-md-10">
+														<p>Transpiracy in public administration, for instance, non-cash-based payments and traceability.</p>
+													</div>
+											</div><!--endrow-->
+											</div>
+
+
+
+
+
+											<div class="col-md-5 container  mag">
+
+												<div class="row">
+													<div class="col-md-2">
+														<img src="bank.svg">
+													</div>
+
+													<div class="col-md-10">
+														<p>Transpiracy in public procurement and the administration of public finances</p>
+													</div>
+												</div><!--endrow-->
+											</div>
+
+
+
+
+											<div class="col-md-5 container mag">
+
+												<div class="row">
+													<div class="col-md-2">
+														<img src="transcript.svg">
+													</div>
+
+													<div class="col-md-10">
+														<p>Safe and reliable reporting of corruption (whistle-blowing promotion and protection).</p>
+													</div>
+
+												</div><!--endrow-->
+											</div>
+
+
+
+
+											<div class="col-md-5 container  mag">
+
+												<div class="row">
+													<div class="col-md-2">
+														<img src="hammer.svg">
+													</div>
+													<div>
+														<p>Financial investigation solutions</p>
+													</div>
+											</div><!--endrow-->
+											</div>
+
+
+
+
+
+											<div class="col-md-6 container ma" style="margin-left: 250px">
+												<div class="row">
+													<div class="col-md-2">
+														<img src="customer.svg">
+													</div>
+
+													<div class="col-md-10">
+														<p>Other areas relevant to UNCAN</p>
+													</div>
+												</div><!--endrow-->
+											</div>
+										</div>
+									</div>
+							</div>
+
+
+
+
+
+
+
+							<div class="jumbotron m pad" style="font-size: 30px">
+								<p>
+									<div>
+										<h2 class="font-weight-bold">Who we are looking for?</h2>
+									</div>
+
+									<div>
+										<p class=" text-secondary">The hackathon is open to young creative people who:</p>
+									</div>
+
+									<div class="ma font-weight-bolder text-dark">
+										<ul type="circle">
+											
+											<li>Are you the age of 18 and 35.</li>
+											<li>Have basic coding skills and some experience with one or more development technologies.</li>
+											<li>Are nationals of Egypt, Kenya, Nigeria, Senegal, and South Africa.</li>
+											<li>Have knowledge of Java, Javascript, C++, Python.</li>
+											<li>Are proficient in English.</li>
+											<li>Are passionate about using their tech skills to design digitally innovatiive solutions to promote integrity and tackle corruption in their countries.</li>
+											<li>Female candidates are particularly encouraged to apply for the hackathon.</li>
+										</ul>
+									</div>
+
+								</p>
+							</div><!--endjumbotron-->
+
+
+
+
+
+							<div class="text-center m" style="font-size: 30px">
+								<div>
+									<h1 class="mag">Awards</h1>
+								</div>
+
+
+								<div class="text-secondary">
+									<p>The winning teams will be invited to present their projects and ideas to the conference of States Parties to the United nations Convention against Corruption (COSP), which will take place in Sharm El-Sheikh, Egypt in December 2021. The COSP will bring together anti-corruption experts from more than 180 countries and will serve as a great opportunity for the winning teams to promote and seek further support for the development of their ICT-based solutions</p>
+									<p>UNODC will cover the travel and accomodation for the winning teams in accordance with the UN travel regulations.</p>
+								</div>
+							</div>
+
+
+							<div class="container text-center">
+								<img src="illustration.png" width="700px" height="700px">
+							</div>
+
+
+
+
+
+							<div class="jumbotron">
+								<div>
+									<h1 class=" font-weight-bold pad ">How it works</h1>
+								</div>
+
+								<div class="row ma font-weight-bold m">
+									<div class="col-md-3">
+										<h1 style="font-size: 45pt">27</h1>
+										<div class="row">
+											<div class="col-md-12 text-secondary">
+												<h3>September</h3>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-3">
+										<h1 style="font-size: 45pt">04</h1>
+										<div class="row"> 
+											<div class="col-md-12 text-secondary">
+												<h3>October</h3>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-3">
+										<h1 style="font-size: 45pt">27</h1>
+										<div class="row">
+											<div class="col-md-12 text-secondary">
+												<h3>October</h3>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-3">
+										<h1 style="font-size: 45pt">01</h1>
+										<div class="row">
+											<div class="col-md-12 text-secondary">
+												<h3>November</h3>
+											</div>
+										</div>
+									</div>
+								</div><!--endrow-->
+
+								<div class="mag col-md-12 col-6">
+									<img src="group.svg" width="100%">
+								</div>
+
+
+
+
+
+								<div class="row mag " style="font-size: 30px; ">
+									<div class="col-md-3">
+										<h3><strong>Applications Deadline</strong></h3>
+										<div class="row">
+											<div class="col-md-12 text-info">
+												Interested participants fill an applcation form to participate in the hackathon by maximum September 20.
+											</div>
+										</div>
+									</div>
+
+
+									<div class="col-md-3">
+										<h3><strong>Hackathon Starts</strong></h3>
+										<div class="row">
+											<div class="col-md-12 text-info">
+												Official Hackathon opening, welcoming participants and Q&A session with the hackathon organizers. Team formations starts aided by mentors.
+											</div>
+										</div> 
+									</div>
+
+
+									<div class="col-md-3">
+										<h3><strong>Final Submissions</strong></h3>
+										<div class="row">
+											<div class="col-md-12 text-info">
+												All teams make their final submissions on the submission platform. teams submit their:
+												<ul>
+													<strong>
+														<li>Project's Github Repository Link</li>
+														<li>Pitch Deck Presentation of their Solution</li>
+														<li>3-minute video of demo of solution</li>
+													</strong>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="col-md-3">
+										<h3><strong>Winner's Announcement</strong></h3>
+										<div class="row">
+											<div class="col-md-10 text-info">
+												Final winner's announced, and all partiicipants receive certificates of participation.
+											</div>
+										</div>
+									</div>
+								</div><!--endrow-->
+
+
+
+								<div style="font-size: 25px">
+									<i><strong class="text-primary">Mentorship, product development, ideation and technical webinars will be organized in the course of the hackathon.</strong></i>
+								</div>
+							</div><!--endjumbotron-->
+
+							<div class="pad mag " style="font-size: 30px"> 
+								<h1><strong>Judging Criteria</strong></h1>
+								<div class="row">
+									<div class="col-md-6 text-secondary m ">
+										<ul>
+											<li>Originality</li>
+											<li>Usefulness</li>
+											<li>Execution</li>
+											<li>Adherence to the theme</li>
+											<li>Social impact</li>
+											<li>Presentation</li>
+											<li>Technology Implementation</li>
+
+										</ul>
+									</div>
+
+									<div class="col-md-6">
+										<img src="team.svg">
+									</div>
+								</div><!--endrow-->
+							</div>
+
+								<hr>
+
+								<div class="container text-center m">
+									<h1><strong>Our Partners</strong></h1>
+								</div>
+
+
+								<div>
+									<h4 class="font-weight-bold text-center container  m text-secondary">Regional Implementating Partners</h4>
+								</div>
+
+								<div class="row m ma">
+									<div class="col-md-3">
+										<img src="celo.jpg" width="300px">
+									</div>
+
+									<div class="col-md-3">
+										<img src="micro.png" width="300px">
+									</div>
+
+									<div class="col-md-3">
+										<img src="untap.png" width="300px" height="150">
+									</div>
+								</div><!--endrow-->
+
+
+								<div>
+									<h3 class="text-center m mag">SENEGAL</h3>
+								</div>
+									<div class="row">
+										<div class="col-md-3">
+											<img src="ofnac.png"width="70%">
+										</div>
+										<div class="col-md-3">
+											<img src="para.jpg" width="70%">
+										</div>
+										<div class="col-md-3">
+											<img src="sen.png"width="70%">
+										</div>
+										<div class="col-md-3">
+											<img src="icode.jpg"width="70%">
+										</div>
+									</div><!--end-->
+
+										<div class="text-center m mag">
+											<h3>KENYA</h3>
+											<img src="dec.png">
+										</div>
+
+										<div class="text-center m mag">
+												<h3>NIGERIA</h3>
+												<img src="girls.png">
+										</div>
+
+										<div class="text-center m mag">
+											<h3><strong>SOUTH AFRICA</strong></h3>
+												<div class="row mag">
+													<div class="col-md-6">
+														<img class="pad" src="poi.png" width="450" height="450">
+													</div>
+													<div class="col-md-6">
+														<img class="pad" src="river.png" height="200" style="padding-top: 90px">
+													</div>
+												</div>	
+										</div>
+
+										<div class="text-center m mag">
+											<h3><strong>EGYPT</strong></h3>
+												<div class="row mag">
+													<div class="col-md-6">
+														<img src="start.png" width="100%">
+													</div>
+													<div class="col-md-6">
+														<img src="logo.png" width="100%">
+													</div>
+												</div>
+										</div>
+
+										<div class="jumbotron">
+											<h1 class="text-center"><strong>Frequently Asked Questions</strong></h1>
+
+											<div style="font-size: 25px;color: teal " id="accordion">
+																<div class="card touch">
+																	<div class="card-header">
+																		<button type="collapsed" class="btn-block btn-lg" data-toggle="collapse" data-target="#collapseOne" >
+																			<h3 class="text-left pad"> <strong>Who Can Participate In The Hackathon?</strong></h3>
+																		</button>
+																	</div>
+																	<div id="collapseOne" class="collapse" data-parent="accordion" >
+																		<div class="card-body jumbotron">
+																			<p>The Hackathon is open to young creative people, who: are between the age 18 and 35; have basic coding skills and some experience with one or more development technologies; are nationals of Egypt, Kenya, Nigeria, Senegal and South Africa; have knowledge of Java, Javascript, C++, Python; are proficient in English;are passionate about using their tech skills to design digital innovative solutions to promote integrity and  tackle corruption in their countries.
+																			</p>
+																			<p>
+																				Females candidates are particularly encouraged to apply for the Hackathon.
+																			</p>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="card">
+																	<div class="card-header">
+																		<button type="collapsed" class="btn-block btn-lg" data-toggle="collapse" data-target="#collapseTwo">
+																			<h3 class="text-left pad"> <strong>What Are The Teams Participation Rules?</strong></h3>
+																		</button>
+																	</div>
+																	<div id="collapseTwo" class="collapse" data-parent="#accordion">
+																		<div class="card-body jumbotron">
+																			<p>Individuals or teams up to 4 members can apply. If you are an individual looking for a team, or a team looking to complete their needed skills, we encourage you to apply and we are going to help you to find team mates.</p>
+																		</div>
+																	</div>
+
+
+
+																<div class="card">
+																	<div class="card-header">
+																		<button type="collapsed" class="btn-block btn-lg" data-toggle="collapse" data-target="#collapseThree">
+																			<h3 class="text-left pad"> <strong>Is This An Online Hackathon? </strong></h3>
+																		</button>
+																	</div>
+																	<div id="collapseThree" class="collapse" data-parent="#accordion">
+																		<div class="card-body jumbotron">
+																			<p>Yes, the hackathon will be held in full virtual mode due to constraining COVID-19 limitations.</p>
+																		</div>
+																	</div>
+
+
+																	<div class="card">
+																	<div class="card-header">
+																		<button type="collapsed" class="btn-block btn-lg" data-toggle="collapse" data-target="#collapseFour">
+																			<h3 class="text-left pad"> <strong>What Are The Issues Within Corruption That I Can Address With My Idea?</strong></h4>
+																		</button>
+																	</div>
+																	<div id="collapseFour" class="collapse" data-parent="#accordion">
+																		<div class="card-body jumbotron">
+																			<p>Your idea has to fall under one of the 5 thematic areas:
+																				<ol type="i">
+																					<li>Transparency in public administration, for instance, non-cash-based payments and traceability.</li>
+																					<li>Transparency in public procurement and the administration of public finances.</li>
+																					<li>Safe and reliable reporting (whistle-blowing promotion and protection).</li>
+																					<li>Financial investigation solutions.</li>
+																					<li>Other areas relevant to UNCAC: UNCAC covers four main areas, namely preventive measures, criminalization and law enforcement, international cooperation, and asset recovery.</li>
+																				</ol>
+																			</p>
+																		</div>
+																	</div>
+
+
+																	<div class="card">
+																	<div class="card-header">
+																		<button type="collapsed" class="btn-block btn-lg" data-toggle="collapse" data-target="#collapseFive">
+																			<h3 class="text-left pad"><strong> What Are The Tracks Of The Hackathon?</strong></h3>
+																		</button>
+																	</div>
+																	<div id="collapseFive" class="collapse" data-parent="#accordion">
+																		<div class="card-body jumbotron">
+																			<p>Each team will work in one of the following tracks based on the type of technology that the team will create:<br>
+																					Track 1: Blockchain Dapp developing<br>
+
+																					Track 2: AI developing<br>
+
+																					Track 3: Web 2.0 developing<</p>
+																		</div>
+																	</div>
+
+
+																	<div class="card">
+																	<div class="card-header">
+																		<button type="collapsed" class="btn-block btn-lg" data-toggle="collapse" data-target="#collapseSix">
+																			<h3 class="text-left pad"> <strong>What Skills Do I Need To Compete In The Hackathon?</strong></h3>
+																		</button>
+																	</div>
+																	<div id="collapseSix" class="collapse" data-parent="#accordion">
+																		<div class="card-body jumbotron">
+																			<p>The prerequisite for taking part in the hackathon is to possess some basic programming skills. But no one expects you to be a seasoned coder in order to develop your idea. However, to impress the jury and maximize your chances to win the hackathon, we encourage you to level up your coding skills in preparation for the hackathon. This will allow you to spend less time at the event on learning how to code (which isn’t bad, as hackathons are also about learning new stuff), but instead, you will have more time to develop your ideas and skills. It will be important to build skills in one of the following coding languages: Java, Javascript, Python or C++. Other possible languages include Go, Rust, Ruby on Rails, Solidity (for blockchain apps). Resources are provided in the hyperlinks.</p>
+																		</div>
+																	</div>
+
+
+
+																	<div class="card">
+																	<div class="card-header">
+																		<button type="collapsed" class="btn-block btn-lg" data-toggle="collapse" data-target="#collapseSeven">
+																			<h3 class="text-left pad"> <strong>What Is The Theme For This Hackathon?</strong></h3>
+																		</button>
+																	</div>
+																	<div id="collapseSeven" class="collapse" data-parent="#accordion">
+																		<div class="card-body jumbotron">
+																			<p>The objectives of the hackathon are to promote the use of information and communications technologies (ICT) to prevent and combat corruption in Africa and to give young developers the chance to come up with their own ideas on how to counter corruption through technologies. The challenge will also promote the implementation of the United Nations Convention Against Corruption (UNCAC) by enhancing public-private partnerships in the development of sustainable ICT-based anti-corruption solutions; youth engagement and employment; innovation and technology.</p>
+																		</div>
+																	</div>
+
+
+																	<div class="card">
+																	<div class="card-header">
+																		<button type="collapsed" class="btn-block btn-lg" data-toggle="collapse" data-target="#collapseEight">
+																			<h3 class="text-left pad"> <strong>What Are The Idea Judging Criteria?</strong></h3>
+																		</button>
+																	</div>
+																	<div id="collapseEight" class="collapse" data-parent="#accordion">
+																		<div class="card-body jumbotron">
+																			<p>The jury will be evaluating your creations based on the following criteria:</p>
+																			<p>
+																				<ul>
+																					<li>How unique the idea is;</li>
+																					<li>How well the idea was implemented;</li>
+																					<li>How closely the submission relates to the topics and overall theme of the hackathon;</li>
+																					<li>How well-covered the educational aspect of the submission is.</li>
+																				</ul>
+																			</p>
+																		</div>
+																	</div>
+
+
+																	<div class="card">
+																	<div class="card-header">
+																		<button type="collapsed" class="btn-block btn-lg" data-toggle="collapse" data-target="#collapseNine">
+																			<h3 class="text-left pad"><strong> How well-covered the educational aspect of the submission is.</strong></h3>
+																		</button>
+																	</div>
+																	<div id="collapseNine" class="collapse" data-parent="#accordion">
+																		<div class="card-body jumbotron">
+																			<p>We recommend that you follow these steps to help you get the best idea:</p>
+																			<p>
+																				<ol type="i">
+																					<li>Identify one or more topics that you find interesting and that you believe are not well understood and therefore need more attention. The more passionate you are about the topic, the higher your chance is to end up with an interesting and unique idea.</li>
+																					<li>Get to know the topic very well. Do your research on the chosen topic(s). If possible, start your research prior to the start of the hackathon.</li>
+																					<li>To ensure uniqueness of your idea, research what kinds of ICT already exist that address the topics you have chosen for your project.</li>
+																					<li>Get inspired by other anti-corruption technologies that have been developed and aim for something that is either new or a better version of what’s already out there. Below are some examples (they are solely for giving you an idea on what other people are doing, please don’t copy them):</li>
+																					<ul>
+																						<li>Examples of Apps to help Victims of Domestic Abuse</li>
+																						<li>The Good, The Bad and The Accountant</li>
+																				</ol>
+																			</p>
+																		</div>
+																	</div>
+
+
+																	<div class="card">
+																	<div class="card-header">
+																		<button type="collapsed" class="btn-block btn-lg" data-toggle="collapse" data-target="#collapseTen">
+																			<h3 class="text-left pad"> <strong>Can I Edit My Submission After I Applied?</strong></h3>
+																		</button>
+																	</div>
+																	<div id="collapseTen" class="collapse" data-parent="#accordion">
+																		<div class="card-body jumbotron">
+																			<p>No, you cannot edit your submission after you have pressed the submit button and received the confirmation message. You can chat with support though to delete your submission for you so that you redo it if necessary.
+																				As long as you don’t press the Submit button, you can access and edit your submission as many times as you need until the deadline. This is why we encourage you to not submit until your application is final.</p>
+																		</div>
+																	</div>
+
+
+																	<div class="card">
+																	<div class="card-header">
+																		<button type="collapsed" class="btn-block btn-lg" data-toggle="collapse" data-target="#collapseEleven">
+																			<h3 class="text-left pad"> <strong>Can A Team Submit More Than One Project?</strong></h3>
+																		</button>
+																	</div>
+																	<div id="collapseEleven" class="collapse" data-parent="#accordion">
+																		<div class="card-body jumbotron">
+																			<p>Each team shall submit one project. No extra points will be awarded for additional submissions.</p>
+																		</div>
+																	</div>
+
+																	<div class="card">
+																	<div class="card-header">
+																		<button type="collapsed" class="btn-block btn-lg" data-toggle="collapse" data-target="#collapseTwelve">
+																			<h3 class="text-left pad"><strong> How Many Winners Are Going To Be Selected For This Hackathon?</strong></h3>
+																		</button>
+																	</div>
+																	<div id="collapseTwelve" class="collapse" data-parent="#accordion">
+																		<div class="card-body jumbotron">
+																			<p>There will be one winning team per each of the five countries. The team with the highest score within each country will be pronounced the winner of the hackathon.</p>
+																		</div>
+																	</div>
+
+
+																		<div class="card">
+																	<div class="card-header">
+																		<button type="collapsed" class="btn-block btn-lg" data-toggle="collapse" data-target="#collapseThirteen">
+																			<h3 class="text-left pad"> <strong>What Are The Awards Of The Hackathon?</strong></h4>
+																		</button>
+																	</div>
+																	<div id="collapseThirteen" class="collapse" data-parent="#accordion">
+																		<div class="card-body jumbotron">
+																			<p>All participants will receive a certificate of participation. And winners will – Receive further support to develop test and make operational the identified tech solution (either in form of tech support and/or seed funding) by the partner organizations of the hackathon. – Attend the 9th session of the Conference of the States Parties (COSP) to UNCAC, which will take place in Sharm El-Sheikh, Egypt in December 2021. The COSP will bring together anti-corruption experts from more than 180 countries and will serve as a great opportunity for the winning teams to promote and seek further support for the development of their ICT-based solutions. More info here.
+																			UNODC will cover the travel and accommodation for the winning teams in accordance with the UN travel regulations.</p>
+																		</div>
+																	</div>
+
+
+																	<div class="card">
+																	<div class="card-header">
+																		<button type="collapsed" class="btn-block btn-lg" data-toggle="collapse" data-target="#collapseFourteen">
+																			<h3 class="text-left pad"> <strong>What Is The Selection Process?</strong></h3>
+																		</button>
+																	</div>
+																	<div id="collapseFourteen" class="collapse" data-parent="#accordion">
+																		<div class="card-body jumbotron">
+																			<p>Both the official jury and all the participants will participate in the selection of the winners. 50% of the points will come from the jury and 50% from the participants. Each participant will have the possibility to nominate the best team. Participants are not allowed to vote for their own team.</p>
+																		</div>
+																	</div>
+
+																	<div class="card">
+																	<div class="card-header">
+																		<button type="collapsed" class="btn-block btn-lg" data-toggle="collapse" data-target="#collapseFifteen">
+																			<h3 class="text-left pad"><strong> What Are The Objectives Of The Hackathon?</strong></h3>
+																		</button>
+																	</div>
+																	<div id="collapseFifteen" class="collapse" data-parent="#accordion">
+																		<div class="card-body jumbotron">
+																			<p>The objectives of the hackathon are to promote the use of information and communications technologies (ICT) to prevent and combat corruption in Africa and to give young developers the chance to come up with their own ideas on how to counter corruption through technologies. The challenge will also promote the implementation of the United Nations Convention Against Corruption (UNCAC) by enhancing public-private partnerships in the development of sustainable ICT-based anti-corruption solutions; youth engagement and employment; innovation and technology.</p>
+																		</div>
+																	</div>
+
+
+																	<div class="card">
+																	<div class="card-header">
+																		<button type="collapsed" class="btn-block btn-lg" data-toggle="collapse" data-target="#collapseSixteen">
+																			<h3 class="text-left pad"><strong>What Exactly Is “Corruption”? </strong></h3>
+																		</button>
+																	</div>
+																	<div id="collapseSixteen" class="collapse" data-parent="#accordion">
+																		<div class="card-body jumbotron">
+																			<p>Corruption is a complex social, political and economic phenomenon that affects all countries. Corruption undermines democratic institutions, slows economic development, and contributes to governmental instability. Corruption attacks the foundation of democratic institutions by distorting electoral processes, perverting the rule of law, and creating bureaucratic quagmires whose only reason for existing is the soliciting of bribes. Economic development is stunted because foreign direct investment is discouraged and small businesses within the country often find it impossible to overcome the “start-up costs” required because of corruption.</p>
+																		</div>
+																	</div>
+
+																		<div class="card">
+																	<div class="card-header">
+																		<button type="collapsed" class="btn-block btn-lg" data-toggle="collapse" data-target="#collapseSeventeen">
+																			<h3 class="text-left pad"> <strong>What Is The “United Nations Convention Against Corruption (UNCAC)”?</strong></h3>
+																		</button>
+																	</div>
+																	<div id="collapseSeventeen" class="collapse" data-parent="#accordion">
+																		<div class="card-body jumbotron">
+																			<p><a href="#">The United Nations Convention against Corruption (UNCAC)</a> is the only global legally binding anti-corruption instrument. The Convention’s far-reaching approach and the mandatory character of many of its provisions make it a unique tool for developing a comprehensive response to a global problem such as corruption.</p>
+																		</div>
+																	</div>
+
+						
+
+																</div>
+															</div>
+														</div>
+													</div>
+
+												<div class="container pad mag">
+													<div class="row">
+														<div class="col-md-3">
+															<img src="code.svg">
+														</div>
+														<div class="col-md-2">
+															<img src="justice.svg">
+														</div>
+														<div class="col-md-2">
+															<img src="anti.svg">
+														</div>
+														<div class="col-md-2">
+															<i class=""></i>
+														</div>
+													</div>
+
+													<div class="text-center row ma pd ">
+														<div class="col-md-12">
+															<small>
+																<a href="" class="text-dark mag"><strong>About</strong></a>
+																<a href="agenda.html" class="text-dark mag"><strong>Agenda</strong></a>
+																<a href="" class="text-dark mag"><strong>FAQs</strong></a>
+																<a href="contact.html" class="text-dark mag"><strong>Contact</strong></a>
+															</small>
+														</div>
+													</div>
+
+												</div>
+												<hr>
+												<div class="container">
+													<footer><p  class="text-sm-left">Copyright &copy UNODC 2021, All rights reserved.</p></footer>
+												</div>
+
+
+
+</body>									
+</html> 

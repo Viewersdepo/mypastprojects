@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task1Andtwo</title>
+</head>
+<body>
+	<h1 >Javasript class</h1>
+<script>
+
+	function myArea(){
+		let a=5, b=6, c=7;
+		const s=(a+b+c)/2;
+		const m=Math.sqrt(s*(s-a)*(s-b)*(s-c));
+		let result=document.getElementById("demo");
+		return result.innerHTML="The Area of a triangle=" +m;
+	}
+	alert(myArea);
+	/*
+	//JS Data types
+	let length =16 //number
+	let lastName="Johnson"; //string
+	const x={
+		firstName: "John",
+		lastName: "Doe"
+	};           //object 
+
+	//JS Functions
+	function myfunction(){
+		alert("Hello World!");
+	}
+	myfunction();
+
+
+
+	function myfuntion(){
+		alert ("Hello World!");
+	}
+
+
+	function myFunction(){
+		return "He's good";
+	}
+	document.getElementById('demo').innerHTML=myFunction();	
+
+
+	function myFunction(){
+		document.getElementById('demo').innerHTML="Hello";
+
+	}
+		//JS object
+	
+	const person={
+		firstName:"John",
+		lastName:"Doe",
+		country:"Norway",
+	};
+	alert(person.firstName);
+
+
+	const person={
+		name:"John", age:50
+	};
+	alert(person.name +"is"+person.age)
+	 
+
+
+	 	//JS Events
+
+				
+				//Multiplication & Division
+				function multiply(num1, num2){
+				var result= num1 * num2;
+				document.write(result+ "<br>");
+				}
+				multiply(20, 40);
+				multiply(6, 7);
+				multiply(8, 3);
+				multiply(12, 12);
+
+
+
+				function divide(dig1, dig2){
+					var output=dig1 / dig2;
+					document.write(output+"<br>");
+				}
+				divide(12,6);
+				divide(40,5);
+				divide(52,2);
+
+
+			<button onclick="alert('Hello')">Click me.</button>
+
+				<div onmouseover="this.style.backgroundColor='red'">myDIV.</div>
+</script>
+</body>
+</html>
