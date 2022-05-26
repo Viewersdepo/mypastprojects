@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hangman Game</title>
+	<style>
+		#ba{
+			background-color:lavender;
+		}
+	</style>
+</head>
+<body id="ba">
+	<header>
+		<h1 id="h">Hangman Game!</h1>
+	</header>
+	<button type="button" onclick="gamer()">
+		Click to play
+	</button>
+
+	
+	<script>
+			document.getElementById("h").style.color="purple";
+			var name=prompt("What's your name");
+			document.write("Hello"+ name +"<br>");
+
+
+			function gamer() {
+					
+					var likesGame =confirm("Do you like to play Hangman?");
+					if (likesGame){
+						alert("You are cool!");
+					}
+					else {
+						alert("Yeah, that's fine. You're still cool!");
+					}
+
+
+					alert("Javascript is awesome!");
+
+
+					//Create an Array of words
+					var words=["javascript", "monkey", "amazing", "pancake", "feeble"];
+					
+					//pick a random word
+					var word =words[Math.floor(Math.random()*words.length)];
+
+
+					//Set up an the answer array
+					var answerArray =[];
+					for (var i = 0; i < word.length; i++) {
+						answerArray[i]="_";
+					}
+
+					var remainingLetters= word.length;
+
+					//The game loop
+					while(remainingLetters>0){
+
+					//Show the player their progress
+					alert(answerArray.join(""));
+
+					//Player guess
+					var guess=prompt("Guess a letter, or click Cancel to stop playing.");
+					if (guess===null) {
+					
+					break		
+					}
+					else if(guess.length !==1){
+						alert("Please enter a single letter.");
+					}
+					else{
+						//update the game state with the guess
+					for (var j = 0; j < word.length; j++) {
+						if (word[j] ===guess){
+							answerArray[j]=guess;
+							remainingLetters--;
+						}
+					}
+					}
+				}
+					alert(answerArray.join(""));
+					alert("Good job! The answer was" + word);
+		}
+	</script>
+</body>
+</html>

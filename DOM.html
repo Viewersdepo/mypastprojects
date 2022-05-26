@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8/>
+	<title>JS DOM paragragh style</title>
+</head>
+<body>
+	<!--paragraph modification-->
+	<h1>Assignment1!</h1>
+	<p id="cool">Javascript Exercises-W3resource is super fun! Whoo hoo!!</p>
+	<div>
+		<button  onclick="js_style()">See something different</button>
+	</div>
+
+
+
+	<!--form modification-->
+	<h1>Assignment2!!</h1>
+	<p>Please ensure to submit</p>
+	<form id="form1" onsubmit="form_return()">
+		First name: <input type="text" name="fname" value="David"><br>
+		Last name: <input type="text" name="lname" value="Beckham"><br>
+		<input type="submit" value="Submit">
+	</form>
+
+
+
+	<!--insert row in a table-->
+	<h1>Assignment3!!!</h1>
+	<table id="sampleTable" border="1">
+		<tr>
+			<td>Row1 Cell1</td>
+			<td>Row1 Cell2</td>
+		</tr>
+		<tr>
+			<td>Row2 Cell1</td>
+			<td>Row2 Cell2</td>
+		</tr>
+	</table><br>
+	<input type="button" onclick="insert_Row()" value="Insert row">
+
+
+
+
+
+	
+	<!--Remove items from a dropdown-->
+	<h1>Assignment4!!!!</h1>
+	<div>
+		<form>
+			Select a color:
+			<br>
+			<select id="colorSelect">
+				<option>Red</option>
+				<option>Green</option>
+				<option>White</option>
+				<option>Black</option>
+				<option>Blue</option>
+				<option>Pink</option>
+				<option>Purple</option>
+				<option>Violet</option>
+			</select>
+		</form>
+	</div>
+	<br>
+	<input type="button" onclick="removecolor()" value="Select and Remove">
+
+
+
+	<script>
+		function js_style() {
+			//CHANGE FONT, FONTSIZE AND COLOR
+			document.getElementById('cool').style.color="pink";
+			document.getElementById('cool').style.fontFamily="Impact";
+			document.getElementById('cool').style.fontSize='larger';
+		}
+
+		//RETURN FIRST AND LASTNAME
+		function form_return() 
+		{
+			 var x=document.getElementById('form1');
+			 for (var i = 0; i < x.length; i++) 
+			 {
+			 	if (x.elements[i].value!='Submit')
+			 	 {
+			 		alert(x.elements[i].value);
+			 	}
+			 }
+		}
+
+		//INSERT NEW ROW
+		function insert_Row() {
+			var table=document.getElementById("sampleTable");
+			var row=table.insertRow(0);
+			var cell1=row.insertCell(0);
+			var cell2=row.insertCell(1)
+			cell1.innerHTML="NEW CELL1";
+			cell2.innerHTML="NEW CELL2";
+		}
+
+		//REVOVE A SELECTED ITEM
+		function removecolor() {
+			var s =document.getElementById('colorSelect');
+			s.remove(s.selectedIndex);
+		}
+	</script>
+</body>
+</html>
